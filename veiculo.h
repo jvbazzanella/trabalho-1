@@ -8,17 +8,18 @@
 
     string marca;
     int cavalos;
-    int capacidade
+    int capacidade;
 
 
   public:
+    veiculo(string marca="n", int cavalos=0, int capacidade=0);
 
     string getMarca() const;
     int getCavalos() const;
     int getCapacidade() const;
 
-    void setMarca() const
-    void setCavalos() const;
-    void setCapacidade() const;
+    void setMarca(string marca);
+    void setCavalos(int cavalos);
+    void setCapacidade(int capacidade);
   }
 #endif
