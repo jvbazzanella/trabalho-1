@@ -1,4 +1,4 @@
-#ifndef BARCO_H
+#ifdef BARCO_H
 #define BARCO_H
 
 #include "veiculo.h"
