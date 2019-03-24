@@ -23,10 +23,10 @@ void veiculo::setMarca(string m) {
   marca=m;
 }
 
-void veiculo ::setPotencia(int cav) {
+void veiculo::setPotencia(int cav) {
   potencia=cav;
 }
 
-void veiculo:: setCapacidade(int cap){
+void veiculo::setCapacidade(int cap){
   capacidade=cap;
 }
