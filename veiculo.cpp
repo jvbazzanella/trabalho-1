@@ -5,14 +5,14 @@
 
 using namespace std;
 
-veiculo::veiculo(string m, int cav, int cap) : marca(m), cavalos(cav), capacidade(cap) {}
+veiculo::veiculo(string m, int cav, int cap) : marca(m), potencia(cav), capacidade(cap) {}
 
 string veiculo::getMarca() const {
   return marca;
 }
 
-int veiculo::getCavalos() const {
-  return cavalos;
+int veiculo::getPotencia() const {
+  return potencia;
 }
 
 int veiculo::getCapacidade() const {
@@ -23,8 +23,8 @@ void veiculo::setMarca(string m) {
   marca=m;
 }
 
-void veiculo ::setCavalos(int cav) {
-  cavalos=cav;
+void veiculo ::setPotencia(int cav) {
+  potencia=cav;
 }
 
 void veiculo:: setCapacidade(int cap){

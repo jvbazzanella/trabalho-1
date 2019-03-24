@@ -7,19 +7,19 @@
   private:
 
     string marca;
-    int cavalos;
+    int potencia;
     int capacidade;
 
 
   public:
-    veiculo(string marca="n", int cavalos=0, int capacidade=0);
+    veiculo(string marca="n", int potencia=0, int capacidade=0);
 
     string getMarca() const;
-    int getCavalos() const;
+    int getPotencia() const;
     int getCapacidade() const;
 
     void setMarca(string marca);
-    void setCavalos(int cavalos);
+    void setPotencia(int potencia);
     void setCapacidade(int capacidade);
   }
-#endif
+#endif  
