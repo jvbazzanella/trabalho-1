@@ -20,9 +20,9 @@ int main(){
     aut3.setCapacidade(15);
     aut3.setPotencia(15000);
 
-    cout << "Automóvel 1:\n" << "Marca: " << aut1.getMarca() << "\nCapacidade: " << aut1.getCapacidade() << "\nPotência" << aut1.getPotencia() << endl;
-    cout << "Automóvel 2:\n" << "Marca: " << aut2.getMarca() << "\nCapacidade: " << aut2.getCapacidade() << "\nPotência" << aut2.getPotencia() << "Tipo" << aut2.getTipo() << endl;
-    cout << "Automóvel 3:\n" << "Marca: " << aut3.getMarca() << "\nCapacidade: " << aut3.getCapacidade() << "\nPotência" << aut3.getPotencia() << "Capacidade de Carga" << aut3.getCap_carga() << endl;
+    cout << "\nAutomóvel 1: \n" << "Marca: " << aut1.getMarca() << " \nCapacidade: " << aut1.getCapacidade() << " \nPotência: " << aut1.getPotencia() << endl;
+    cout << "\nAutomóvel 2: \n" << "Marca: " << aut2.getMarca() << " \nCapacidade: " << aut2.getCapacidade() << " \nPotência: " << aut2.getPotencia() << "\nTipo: " << aut2.getTipo() << endl;
+    cout << "\nAutomóvel 3: \n" << "Marca: " << aut3.getMarca() << " \nCapacidade: " << aut3.getCapacidade() << " \nPotência: " << aut3.getPotencia() << "\nCapacidade de Carga: " << aut3.getCap_carga() << endl;
 
     return 0;
 }

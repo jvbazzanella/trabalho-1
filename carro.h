@@ -10,13 +10,13 @@ using namespace std;
 
 class Carro : public veiculo {
 
-    private:     
-    
+    private:
+
     string tipo; //SUV, esportivo.
 
     public:
 
-    Carro(string tipo = "tipo");
+    Carro(string tipo = "N");
 
     string getTipo() const;
     void setTipo(string tipo);
