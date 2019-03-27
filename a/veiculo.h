@@ -2,6 +2,7 @@
 #define VEICULO_H
 #include <string>
 #include <iomanip>
+#include <iostream>
 
 using namespace std;
 
@@ -12,9 +13,9 @@ using namespace std;
     string marca;
     int potencia;
     int capacidade;
-    
+
   public:
-    
+
 
     veiculo(string marca="n", int potencia=0, int capacidade=0);
 
@@ -26,4 +27,4 @@ using namespace std;
     void setPotencia(int potencia);
     void setCapacidade(int capacidade);
   };
-#endif  
+#endif

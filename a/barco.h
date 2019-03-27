@@ -1,5 +1,3 @@
-#ifdef BARCO_H
-#define BARCO_H
 
 #include "veiculo.h"
 
@@ -7,8 +5,8 @@ using namespace std;
 
 class Barco : public veiculo {
 
-    private:     
-    
+    private:
+
         int cap_carga;
 
     public:
@@ -18,4 +16,3 @@ class Barco : public veiculo {
         void setCap_carga(int cap_carga);
 
 };
-#endif

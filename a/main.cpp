@@ -2,27 +2,112 @@
 #include <iomanip>
 #include <iostream>
 #include "carro.h"
+#include "veiculo.h"
 #include "barco.h"
 
 using namespace std;
 
-
 int main(){
-    veiculo aut1("Ferrari", 300, 2);
-    Carro aut2("Esportivo");
-    Barco aut3(200);
+    //Carro auttt;
+    veiculo aut1[5];
+    Carro aut2[5];
+    Barco aut3[5];
 
-    aut2.setMarca("Jeep");
-    aut2.setCapacidade(4);
-    aut2.setPotencia(200);
+    int i, pot, cap, capcarg;
+    int a,b=0,c=0,d=0;
+    string mar, tip;
 
-    aut3.setMarca("Yamaha");
-    aut3.setCapacidade(15);
-    aut3.setPotencia(15000);
+    for(i=0;i<5;i++){
+      cout<<"digite o tipo de veiculo, 1 para barco e 2 para carro e 3 para generico"<<endl;
+      cin>>a;
 
-    cout << "Automóvel 1:\n" << "Marca: " << aut1.getMarca() << "\nCapacidade: " << aut1.getCapacidade() << "\nPotência" << aut1.getPotencia() << endl;
-    cout << "Automóvel 2:\n" << "Marca: " << aut2.getMarca() << "\nCapacidade: " << aut2.getCapacidade() << "\nPotência" << aut2.getPotencia() << "Tipo" << aut2.getTipo() << endl;
-    cout << "Automóvel 3:\n" << "Marca: " << aut3.getMarca() << "\nCapacidade: " << aut3.getCapacidade() << "\nPotência" << aut3.getPotencia() << "Capacidade de Carga" << aut3.getCap_carga() << endl;
+      switch (a) {
+        case 3:
+
+        cout<<"digite a marca"<<endl;
+        cin>>mar;
+
+        cout<<"digite a potencia"<<endl;
+        cin>>pot;
+
+        cout<<"digite a capacidade"<<endl;
+        cin>>cap;
+
+        aut1[d].setMarca(mar);
+        aut1[d].setPotencia(pot);
+        aut1[d].setCapacidade(cap);
+        d++;
+        break;
+
+        case 2:
+
+        cout<<"digite a marca"<<endl;
+        cin>>mar;
+
+        cout<<"digite a potencia"<<endl;
+        cin>>pot;
+
+        cout<<"digite a capacidade"<<endl;
+        cin>>cap;
+
+        cout<<"digite o tipo"<<endl;
+        cin>>tip;
+
+        aut2[b].setMarca(mar);
+        aut2[b].setPotencia(pot);
+        aut2[b].setCapacidade(cap);
+        aut2[b].setTipo(tip);
+        b++;
+        break;
+
+        case 1:
+
+        cout<<"digite a marca"<<endl;
+        cin>>mar;
+
+        cout<<"digite a potencia"<<endl;
+        cin>>pot;
+
+        cout<<"digite a capacidade"<<endl;
+        cin>>cap;
+
+        cout<<"digite a capacidade de carga"<<endl;
+        cin>>capcarg;
+
+        aut3[c].setMarca(mar);
+        aut3[c].setPotencia(pot);
+        aut3[c].setCapacidade(cap);
+        aut3[c].setCap_carga(capcarg);
+        c++;
+        break;
+      }
+    }
+
+int x, y, z;
+
+    for(x=0;aut1[x].getMarca() != "n";x++){
+      cout<<"\nveiculo:\n";
+      cout<<"marca:"<<aut1[x].getMarca()<< endl;
+      cout<<"potencia:"<<aut1[x].getPotencia()<< endl;
+      cout<<"capacidade de pessoas:"<<aut1[x].getCapacidade()<< endl;
+
+    }
+
+    for(y=0;aut2[y].getMarca() != "n";y++){
+      cout<<"\ncarro:\n";
+      cout<<"marca:"<<aut2[y].getMarca()<< endl;
+      cout<<"potencia:"<<aut2[y].getPotencia()<< endl;
+      cout<<"capacidade de pessoas:"<<aut2[y].getCapacidade()<< endl;
+      cout<<"tipo de modelo:"<<aut2[y].getTipo()<< endl;
+    }
+
+    for(z=0;aut3[z].getMarca() != "n";z++){
+      cout<<"\nbarco:\n";
+      cout<<"marca:"<<aut3[z].getMarca()<< endl;
+      cout<<"potencia:"<<aut3[z].getPotencia()<< endl;
+      cout<<"capacidade de pessoas:"<<aut3[z].getCapacidade()<< endl;
+      cout<<"capacidade de carga:" << aut3[z].getCap_carga()<< endl;
+    }
 
     return 0;
 }

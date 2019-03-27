@@ -1,0 +1,49 @@
+veiculo
+
+marca - ferrari
+
+potencia - 1000
+
+capacidade - 2
+
+
+
+
+carro
+
+marca - jeep
+
+potencia - 800	
+
+capacidade - 5
+
+tipo - 4x4
+
+
+carro
+
+marca - honda fit
+
+potencia - 200	
+
+capacidade - 5
+
+tipo - popular
+
+barco
+
+marca - yamaha
+
+potencia - 1200
+
+capacidade de carga - 500
+
+capacidade - 10
+
+barco
+
+marca - suzuki
+potencia - 300
+
+capacidade de carga - 100
+capacidade - 2

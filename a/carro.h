@@ -1,6 +1,3 @@
-#ifdef CARRO_H
-#define CARRO_H
-
 
 #include <string>
 #include <iomanip>
@@ -10,8 +7,8 @@ using namespace std;
 
 class Carro : public veiculo {
 
-    private:     
-    
+    private:
+
     string tipo; //SUV, esportivo.
 
     public:
@@ -22,4 +19,3 @@ class Carro : public veiculo {
     void setTipo(string tipo);
 
 };
-#endif
